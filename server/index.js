@@ -9,7 +9,7 @@ const morgan = require("morgan")
 
 app.use(express.json());
 app.use(morgan("tiny"));
-app.use(cors({ origin: "http://localhost:5173" })); 
+app.use(cors({ origin: ["http://localhost:5173", "https://crud-59imj4eux-sai-koushiks-projects.vercel.app/"] })); 
 
 function Middleware(req, res, next){
     console.log("This is a custom middleware");
