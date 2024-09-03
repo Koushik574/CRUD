@@ -19,7 +19,7 @@ function App() {
   };
 
   const addUser = async () => {
-    const response = await fetch('http://localhost:3000/add', {
+    const response = await fetch('https://crud-wuzh.onrender.com/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ function App() {
   };
 
   const deleteUser = async (id) => {
-    const response = await fetch('http://localhost:3000/remove', {
+    const response = await fetch('https://crud-wuzh.onrender.com/remove', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ function App() {
   };
 
   const updateUser = async () => {
-    const response = await fetch(`http://localhost:3000/${editingUser.id}`, {
+    const response = await fetch(`https://crud-wuzh.onrender.com/${editingUser.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
