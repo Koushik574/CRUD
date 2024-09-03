@@ -12,7 +12,8 @@ function App() {
   }, []);
 
   const fetchUsers = async () => {
-    const response = await fetch('http://localhost:3000/');
+    // const response = await fetch('http://localhost:3000/');
+    const response = await fetch('https://crud-wuzh.onrender.com');
     const data = await response.json();
     setUsers(data.data);
   };
